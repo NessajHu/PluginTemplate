@@ -1,0 +1,8 @@
+﻿#pragma once
+#include <QtGlobal>
+
+#ifdef EXTENSIONSYSTEM_LIBRARY
+# define EXTENSIONSYSTEM_EXPORT Q_DECL_EXPORT
+#else
+# define EXTENSIONSYSTEM_EXPORT Q_DECL_IMPORT
+#endif
